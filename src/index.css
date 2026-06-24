@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ *
+ *  Ernest Moyo — design system
+ *  "field-grade data science": ink ground, Tanzania-flag accents
+ *  (emerald / gold / indigo), Fraunces display + Inter + mono data.
+ * ------------------------------------------------------------------ */
+@theme {
+  --color-ink: #080b0c;
+  --color-ground: #0b1011;
+  --color-surface: #111a1c;
+  --color-surface-2: #162123;
+  --color-line: #233032;
+  --color-line-soft: #1a2527;
+
+  --color-fg: #eaf1ef;
+  --color-fg-muted: #9fb1ad;
+  --color-fg-dim: #6c807c;
+
+  --color-emerald: #2dd4a7;
+  --color-emerald-deep: #0f9b76;
+  --color-gold: #f4b740;
+  --color-indigo: #5b9bd5;
+  --color-rose: #e8746a;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --shadow-card: 0 1px 0 0 rgba(255, 255, 255, 0.03) inset,
+    0 24px 60px -30px rgba(0, 0, 0, 0.8);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv05";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* subtle topographic grid behind everything */
+.bg-topo {
+  background-image: radial-gradient(
+      circle at 1px 1px,
+      rgba(45, 212, 167, 0.045) 1px,
+      transparent 0
+    );
+  background-size: 26px 26px;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  letter-spacing: -0.02em;
+  line-height: 1.04;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-emerald);
+}
+
+.card {
+  background: linear-gradient(180deg, var(--color-surface), var(--color-ground));
+  border: 1px solid var(--color-line);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-card);
+}
+
+.prose-body p {
+  color: var(--color-fg-muted);
+  line-height: 1.75;
+}
+.prose-body strong {
+  color: var(--color-fg);
+  font-weight: 600;
+}
+
+/* range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--color-line);
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-emerald);
+  border: 2px solid var(--color-ground);
+  cursor: pointer;
+  box-shadow: 0 0 0 3px rgba(45, 212, 167, 0.15);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-emerald);
+  border: 2px solid var(--color-ground);
+  cursor: pointer;
+}
+
+/* map polygon hover */
+.geo path {
+  transition: fill 120ms ease, stroke 120ms ease, opacity 120ms ease;
+}
+
+/* mermaid container theming */
+.mermaid-wrap svg {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  background: rgba(45, 212, 167, 0.25);
+  color: #fff;
+}
+
+/* thin scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line) transparent;
+}
