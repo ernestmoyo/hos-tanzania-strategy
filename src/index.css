@@ -1,34 +1,34 @@
 @import "tailwindcss";
 
 /* ------------------------------------------------------------------ *
- *  Ernest Moyo — design system
- *  "field-grade data science": ink ground, Tanzania-flag accents
- *  (emerald / gold / indigo), Fraunces display + Inter + mono data.
+ *  Ernest Moyo — design system (light)
+ *  Clean white ground, Tanzania-flag accents (emerald / gold / indigo),
+ *  Fraunces display + Inter + mono data.
  * ------------------------------------------------------------------ */
 @theme {
-  --color-ink: #080b0c;
-  --color-ground: #0b1011;
-  --color-surface: #111a1c;
-  --color-surface-2: #162123;
-  --color-line: #233032;
-  --color-line-soft: #1a2527;
+  --color-ink: #ffffff;          /* page base + text-on-accent */
+  --color-ground: #ffffff;
+  --color-surface: #f6f8fb;
+  --color-surface-2: #eef2f7;
+  --color-line: #e2e8f0;
+  --color-line-soft: #eef2f7;
 
-  --color-fg: #eaf1ef;
-  --color-fg-muted: #9fb1ad;
-  --color-fg-dim: #6c807c;
+  --color-fg: #14181d;
+  --color-fg-muted: #45505e;
+  --color-fg-dim: #6b7787;
 
-  --color-emerald: #2dd4a7;
-  --color-emerald-deep: #0f9b76;
-  --color-gold: #f4b740;
-  --color-indigo: #5b9bd5;
-  --color-rose: #e8746a;
+  --color-emerald: #0f9b76;
+  --color-emerald-deep: #0b7d5e;
+  --color-gold: #b9820a;
+  --color-indigo: #3a6db2;
+  --color-rose: #d2554a;
 
   --font-display: "Fraunces", Georgia, serif;
   --font-sans: "Inter", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
-  --shadow-card: 0 1px 0 0 rgba(255, 255, 255, 0.03) inset,
-    0 24px 60px -30px rgba(0, 0, 0, 0.8);
+  --shadow-card: 0 1px 0 0 rgba(16, 24, 40, 0.02) inset,
+    0 14px 40px -24px rgba(16, 24, 40, 0.25);
 }
 
 html {
@@ -46,11 +46,11 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* subtle topographic grid behind everything */
+/* subtle topographic grid behind hero */
 .bg-topo {
   background-image: radial-gradient(
       circle at 1px 1px,
-      rgba(45, 212, 167, 0.045) 1px,
+      rgba(15, 155, 118, 0.07) 1px,
       transparent 0
     );
   background-size: 26px 26px;
@@ -76,7 +76,7 @@ body {
 }
 
 .card {
-  background: linear-gradient(180deg, var(--color-surface), var(--color-ground));
+  background: #ffffff;
   border: 1px solid var(--color-line);
   border-radius: 1rem;
   box-shadow: var(--shadow-card);
@@ -107,16 +107,16 @@ input[type="range"]::-webkit-slider-thumb {
   height: 16px;
   border-radius: 50%;
   background: var(--color-emerald);
-  border: 2px solid var(--color-ground);
+  border: 2px solid #ffffff;
   cursor: pointer;
-  box-shadow: 0 0 0 3px rgba(45, 212, 167, 0.15);
+  box-shadow: 0 0 0 3px rgba(15, 155, 118, 0.18);
 }
 input[type="range"]::-moz-range-thumb {
   width: 16px;
   height: 16px;
   border-radius: 50%;
   background: var(--color-emerald);
-  border: 2px solid var(--color-ground);
+  border: 2px solid #ffffff;
   cursor: pointer;
 }
 
@@ -132,8 +132,8 @@ input[type="range"]::-moz-range-thumb {
 }
 
 ::selection {
-  background: rgba(45, 212, 167, 0.25);
-  color: #fff;
+  background: rgba(15, 155, 118, 0.18);
+  color: #0b1f18;
 }
 
 /* thin scrollbar */

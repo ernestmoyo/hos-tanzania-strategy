@@ -83,7 +83,7 @@ export function PopulationChart() {
             {/* y grid */}
             {y.ticks(4).map((t) => (
               <g key={t} transform={`translate(0,${y(t)})`}>
-                <line x1={0} x2={iw} stroke="#1a2527" />
+                <line x1={0} x2={iw} stroke="#e8edf3" />
                 <text x={-10} dy="0.32em" textAnchor="end" className="mono" fill="#6c807c" fontSize="10">
                   {t >= 1e6 ? `${(t / 1e6).toFixed(1)}M` : `${(t / 1e3).toFixed(0)}k`}
                 </text>
@@ -101,7 +101,7 @@ export function PopulationChart() {
                 key={r.region}
                 d={lineGen(r.series) || ""}
                 fill="none"
-                stroke={r.region === active ? "#2dd4a7" : "#26393b"}
+                stroke={r.region === active ? "#0f9b76" : "#c7d2de"}
                 strokeWidth={r.region === active ? 0 : 1}
                 opacity={r.region === active ? 0 : 0.7}
                 onMouseEnter={() => setActive(r.region)}
@@ -112,16 +112,16 @@ export function PopulationChart() {
             {activeRow && (
               <>
                 <path d={areaGen(activeRow.series) || ""} fill="url(#g1)" opacity={0.35} />
-                <path d={lineGen(activeRow.series) || ""} fill="none" stroke="#2dd4a7" strokeWidth={2.5} />
+                <path d={lineGen(activeRow.series) || ""} fill="none" stroke="#0f9b76" strokeWidth={2.5} />
                 {activeRow.series.map((d) => (
-                  <circle key={d.year} cx={x(d.year)} cy={y(d.pop)} r={3.5} fill="#2dd4a7" stroke="#0b1011" />
+                  <circle key={d.year} cx={x(d.year)} cy={y(d.pop)} r={3.5} fill="#0f9b76" stroke="#ffffff" />
                 ))}
               </>
             )}
             <defs>
               <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#2dd4a7" />
-                <stop offset="100%" stopColor="#2dd4a7" stopOpacity="0" />
+                <stop offset="0%" stopColor="#0f9b76" />
+                <stop offset="100%" stopColor="#0f9b76" stopOpacity="0" />
               </linearGradient>
             </defs>
           </g>

@@ -1,11 +1,11 @@
 // Mermaid chart definitions for each task.
 
 export const stakeholderChart = `flowchart TB
-  classDef moh fill:#10231d,stroke:#2dd4a7,color:#eaf1ef;
-  classDef ralg fill:#10202e,stroke:#5b9bd5,color:#eaf1ef;
-  classDef gate fill:#2a1d10,stroke:#f4b740,color:#f4e3c0;
-  classDef comm fill:#161f17,stroke:#7bbf6a,color:#eaf1ef;
-  classDef ext fill:#1a1622,stroke:#a98fd0,color:#eaf1ef;
+  classDef moh fill:#e7f6ef,stroke:#0f9b76,color:#0f3a2a;
+  classDef ralg fill:#e9f1fb,stroke:#3a6db2,color:#13334f;
+  classDef gate fill:#fdf3da,stroke:#b9820a,color:#5a4205;
+  classDef comm fill:#eaf5e6,stroke:#5a9e4a,color:#22421b;
+  classDef ext fill:#f1ecf8,stroke:#8a6fc0,color:#3a2d52;
 
   HOS([HOS launch in Tanzania]):::moh
 
@@ -51,8 +51,8 @@ export const stakeholderChart = `flowchart TB
 `;
 
 export const engagementChart = `flowchart LR
-  classDef step fill:#10231d,stroke:#2dd4a7,color:#eaf1ef;
-  classDef out fill:#2a1d10,stroke:#f4b740,color:#f4e3c0;
+  classDef step fill:#e7f6ef,stroke:#0f9b76,color:#0f3a2a;
+  classDef out fill:#fdf3da,stroke:#b9820a,color:#5a4205;
 
   A[1 · Listen<br/>give the history<br/>the dignity of being right]:::step
   B[2 · Reframe<br/>her skepticism =<br/>my quality bar]:::step
@@ -67,10 +67,10 @@ export const engagementChart = `flowchart LR
 `;
 
 export const offlineChart = `flowchart LR
-  classDef dev fill:#10231d,stroke:#2dd4a7,color:#eaf1ef;
-  classDef sync fill:#10202e,stroke:#5b9bd5,color:#eaf1ef;
-  classDef nat fill:#1a1622,stroke:#a98fd0,color:#eaf1ef;
-  classDef fb fill:#2a1d10,stroke:#f4b740,color:#f4e3c0;
+  classDef dev fill:#e7f6ef,stroke:#0f9b76,color:#0f3a2a;
+  classDef sync fill:#e9f1fb,stroke:#3a6db2,color:#13334f;
+  classDef nat fill:#f1ecf8,stroke:#8a6fc0,color:#3a2d52;
+  classDef fb fill:#fdf3da,stroke:#b9820a,color:#5a4205;
 
   CHW[CHW / nurse device<br/>capture + validate + decide<br/>ON-DEVICE]:::dev
   Q[Local queue<br/>solar + battery powered]:::dev
@@ -90,9 +90,9 @@ export const offlineChart = `flowchart LR
 `;
 
 export const crisisChart = `flowchart TB
-  classDef bad fill:#2a1212,stroke:#e8746a,color:#f6d6d2;
-  classDef good fill:#10231d,stroke:#2dd4a7,color:#eaf1ef;
-  classDef act fill:#2a1d10,stroke:#f4b740,color:#f4e3c0;
+  classDef bad fill:#fbe9e7,stroke:#d2554a,color:#5e1c16;
+  classDef good fill:#e7f6ef,stroke:#0f9b76,color:#0f3a2a;
+  classDef act fill:#fdf3da,stroke:#b9820a,color:#5a4205;
 
   N[Newspaper questions foreign<br/>digital-health + data privacy]:::act
   D{First instinct:<br/>rebut publicly?}:::act

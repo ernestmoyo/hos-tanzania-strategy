@@ -138,8 +138,8 @@ export function ReadinessModel() {
                     key={i}
                     d={d}
                     fill={fill(i)}
-                    stroke={isPilot && mode === "score" ? "#ffffff" : "#070b0d"}
-                    strokeWidth={isPilot && mode === "score" ? 2.2 : 0.5}
+                    stroke={isPilot && mode === "score" ? "#0b0f12" : "#ffffff"}
+                    strokeWidth={isPilot && mode === "score" ? 2.4 : 0.6}
                     opacity={hover && hover.i !== i ? 0.82 : 1}
                     onMouseMove={(e) => {
                       const r = svgRef.current!.getBoundingClientRect();
@@ -196,7 +196,7 @@ export function ReadinessModel() {
             <span className="mono text-[0.65rem] text-fg-dim">high</span>
             {mode === "score" && (
               <span className="mono ml-2 flex items-center gap-1 text-[0.65rem] text-fg">
-                <span className="inline-block h-2 w-2 rounded-sm ring-1 ring-white" />
+                <span className="inline-block h-2 w-2 rounded-sm ring-2 ring-[#0b0f12]" />
                 pilot pick
               </span>
             )}
