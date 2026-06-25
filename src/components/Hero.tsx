@@ -30,9 +30,9 @@ export function Hero() {
             <span className="text-emerald">Tanzania</span>.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-fg-muted sm:text-xl">
-            A 90-day strategy to win the Ministry, the frontline and the public —
-            built on the real Tanzanian health system, and on a live spatial
-            model of where to start. By{" "}
+            A 90-day strategy to win the Ministry, the frontline and the public,
+            built on the real Tanzanian health system and on a live spatial model
+            of where to start. By{" "}
             <strong className="font-semibold text-fg">Ernest Moyo</strong>,
             digital-health implementer &amp; data scientist, Dar es Salaam.
           </p>

@@ -64,10 +64,11 @@ npm run dev
 Vite · React · TypeScript · Tailwind v4 · d3-geo / d3-shape / d3-scale ·
 Mermaid · Motion.
 
-## Sources & confidence
+## Disclaimer
 
-Named officials are current to Tanzania's November 2025 cabinet and flagged for
-re-verification. Rwanda/HOS figures are treated as Sand's published claims
-pending independent corroboration. Census + boundaries: National Bureau of
-Statistics 2022 PHC (via citypopulation.de) and the UVIWADA Tanzania shapefile
-set. Prepared for assignment purposes only.
+This work is based on my own experience as a researcher and on publicly
+available data, which may need verification. Named officials are current to
+Tanzania's November 2025 cabinet. Rwanda/HOS figures are treated as published
+claims pending independent corroboration. Census and boundaries: National Bureau
+of Statistics 2022 Population & Housing Census and public administrative
+boundaries.

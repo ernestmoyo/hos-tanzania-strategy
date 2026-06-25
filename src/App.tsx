@@ -37,7 +37,7 @@ export default function App() {
         title={
           <>
             Tanzania is at the rare moment when a{" "}
-            <span className="text-emerald">government-owned</span> platform wins —
+            <span className="text-emerald">government-owned</span> platform wins,
             and a donor-style one dies.
           </>
         }
@@ -47,23 +47,23 @@ export default function App() {
           <Reveal>
             <CardItem badge="The shock" badgeTone="rose" title="Donor money collapsed in 2025">
               The US aid freeze and PEPFAR drawdown removed roughly a quarter to a
-              half of planned HIV resources — on a response that was{" "}
-              <strong>~90% US-funded</strong>. Vertical donor programmes are
+              half of planned HIV resources, on a response that was{" "}
+              <strong>about 90% US-funded</strong>. Vertical donor programmes are
               suddenly fragile.
             </CardItem>
           </Reveal>
           <Reveal delay={0.08}>
             <CardItem badge="The pivot" badgeTone="emerald" title="Tanzania funds its own systems">
-              AI, telemedicine, teleradiology and HIS strengthening went into
-              Tanzania's <strong>own 2026/27 budget (TZS 1.8 trillion)</strong>,
+              AI, telemedicine, teleradiology and health-information systems went
+              into Tanzania's <strong>own 2026/27 budget (TZS 1.8 trillion)</strong>,
               and Universal Health Insurance began enrolling households from{" "}
               <strong>26 January 2026</strong>.
             </CardItem>
           </Reveal>
           <Reveal delay={0.16}>
             <CardItem badge="The opening" badgeTone="gold" title="HOS becomes a national priority">
-              That shift — from donor-dependent verticals to government-owned,
-              data-driven systems — is precisely the gap HOS fills.{" "}
+              That shift, from donor-dependent verticals to government-owned,
+              data-driven systems, is precisely the gap HOS fills.{" "}
               <strong>But only if it is demonstrably owned, funded and controlled
               by Tanzania.</strong>
             </CardItem>
@@ -73,13 +73,12 @@ export default function App() {
         <Reveal delay={0.1}>
           <div className="mt-6">
             <Callout tone="emerald" title="Why I wrote this against the real system, not a generic one">
-              I live in Dar es Salaam and I'm doing a PhD with the Malaria Atlas
+              I live in Dar es Salaam and I am doing a PhD with the Malaria Atlas
               Project here. Tanzania held a general election in October 2025 and
               President Samia Suluhu Hassan named a restructured cabinet on 17
-              November 2025 — <strong>several health officials changed</strong>.
-              I've used post-reshuffle names and flagged what I'd re-verify on day
-              one. Treating <em>"the system just changed"</em> as part of the
-              homework is itself the answer.
+              November 2025, so <strong>several health officials changed</strong>.
+              I have used post-reshuffle names and treat knowing that the system
+              just changed as part of the homework.
             </Callout>
           </div>
         </Reveal>
@@ -90,8 +89,8 @@ export default function App() {
         id="stakeholders"
         taskTag="TASK 1 · Stakeholder map"
         kicker="Who can say yes"
-        title="Tanzania runs health on two principals — get that wrong and the project dies."
-        lede="Most candidates draw one Ministry of Health at the top. Under decentralisation-by-devolution, the facilities where ~90% of patient contacts happen aren't MoH's at all."
+        title="Tanzania runs health on two principals. Get that wrong and the project dies."
+        lede="Most candidates draw one Ministry of Health at the top. Under decentralisation-by-devolution, the facilities where about 90% of patient contacts happen are not the Ministry's at all."
       >
         <Reveal>
           <Mermaid chart={stakeholderChart} />
@@ -99,38 +98,39 @@ export default function App() {
 
         <div className="mt-6 grid gap-5 md:grid-cols-2">
           <Reveal>
-            <CardItem badge="The structural fact" badgeTone="indigo" title="MoH ≠ PO-RALG">
-              <strong>MoH</strong> owns policy, the national HMIS/registries
-              (DHIS2, AfyaCare) and the referral tier. <strong>PO-RALG /
-              TAMISEMI</strong> owns every dispensary and health centre, staffs
-              them, channels Direct Health Facility Financing, and owns{" "}
-              <strong>GoTHOMIS</strong> (≈96% of primary facilities). The
-              intelligence centre is an MoH conversation; the clinics are a
-              PO-RALG one. Plus a wholly separate <strong>Zanzibar</strong> track —
-              health is a non-union matter.
+            <CardItem badge="The structural fact" badgeTone="indigo" title="MoH is not PO-RALG">
+              The <strong>Ministry of Health</strong> owns policy, the national
+              registries (DHIS2, AfyaCare) and the referral tier.{" "}
+              <strong>PO-RALG / TAMISEMI</strong> owns every dispensary and health
+              centre, staffs them, channels Direct Health Facility Financing, and
+              owns <strong>GoTHOMIS</strong> (about 96% of primary facilities). The
+              intelligence centre is a Ministry conversation; the clinics are a
+              PO-RALG one. Zanzibar is a separate track again, since health is a
+              non-union matter.
             </CardItem>
           </Reveal>
           <Reveal delay={0.08}>
             <CardItem badge="The gates" badgeTone="gold" title="Clear compliance before the pilot">
-              <strong>e-GA</strong> — the #1 technical gate: GISP registration,
-              domestic hosting & DR. <strong>PDPC</strong> — health data as
-              sensitive personal data, with a national-security veto on
-              cross-border transfer. Retrofitting compliance after a pilot is how
-              foreign platforms get killed. Engage both <em>before</em>, not after.
+              <strong>e-GA</strong> is the first technical gate: GISP registration,
+              domestic hosting and disaster recovery. <strong>PDPC</strong> treats
+              health data as sensitive personal data, with a national-security veto
+              on cross-border transfer. Retrofitting compliance after a pilot is how
+              foreign platforms get killed, so engage both before, not after.
             </CardItem>
           </Reveal>
         </div>
 
         <Reveal delay={0.1}>
           <div className="mt-5">
-            <Callout title="The strategic read — what makes this a map, not a list">
-              Plot every stakeholder on <strong>influence × disposition</strong>{" "}
-              and sequence: (1) anchor the two PSs/ICT directors who own the two
-              stacks I must integrate; (2) clear e-GA + PDPC early; (3) recruit one
-              respected RMO/DMO as the pilot's internal owner — a peer voice
-              converts skeptics far better than a vendor; (4) treat CHWs and
-              facility staff as co-designers from week one; (5) map Zanzibar as a
-              separate engagement entirely.
+            <Callout title="The strategic read: what makes this a map, not a list">
+              Plot every stakeholder on <strong>influence by disposition</strong>{" "}
+              and sequence the work. First, anchor the two permanent secretaries and
+              ICT directors who own the two stacks I must integrate. Second, clear
+              e-GA and PDPC early. Third, recruit one respected RMO or DMO as the
+              pilot's internal owner, because a peer voice converts skeptics far
+              better than a vendor. Fourth, treat CHWs and facility staff as
+              co-designers from week one. Fifth, map Zanzibar as a separate
+              engagement entirely.
             </Callout>
           </div>
         </Reveal>
@@ -141,8 +141,8 @@ export default function App() {
         id="relationship"
         taskTag="TASK 2 · Relationship strategy"
         kicker="The skeptical Deputy Minister"
-        title="Her skepticism is earned. So I make her concerns the acceptance criteria."
-        lede="Tanzania has a graveyard of ~18 parallel digital-health systems that never spoke to each other. I don't walk in with a deck — I walk in with questions and a notebook. The goal of meeting one is to earn meeting two."
+        title="Her skepticism is earned, so I make her concerns the acceptance criteria."
+        lede="Tanzania has a graveyard of roughly 18 parallel digital-health systems that never spoke to each other. I do not walk in with a deck. I walk in with questions and a notebook. The goal of meeting one is to earn meeting two."
       >
         <Reveal>
           <Mermaid chart={engagementChart} />
@@ -152,40 +152,39 @@ export default function App() {
           <Reveal>
             <div className="space-y-4">
               <Quote>
-                "Before I tell you anything about what we do, I'd genuinely like to
-                understand what's been tried here before — what worked, and
-                especially what didn't. I'd rather design against your real history
-                than my assumptions."
+                "Before I tell you anything about what we do, I would genuinely like
+                to understand what has been tried here before, what worked, and
+                especially what did not. I would rather design against your real
+                history than my assumptions."
               </Quote>
               <Quote>
-                "The data is Tanzania's — hosted in Tanzania, owned by this
-                Ministry, governed by your rules and your law. You can switch us
-                off without losing a single record. We succeed the day your team
-                can run it without us."
+                "The data is Tanzania's. It is hosted in Tanzania, owned by this
+                Ministry, governed by your rules and your law. You can switch us off
+                without losing a single record. We succeed the day your team can run
+                it without us."
               </Quote>
               <Quote>
-                "I'd rather prove this in a few districts first — integrated with
-                GoTHOMIS and DHIS2 — than promise it across the country and become
+                "I would rather prove this in a few districts first, integrated with
+                GoTHOMIS and DHIS2, than promise it across the country and become
                 system number nineteen."
               </Quote>
             </div>
           </Reveal>
           <Reveal delay={0.08}>
             <div className="space-y-5">
-              <Callout tone="rose" title="What I will NOT do">
-                No "transformative" or "revolutionise". No national-rollout
-                promise. No implication that donor money quietly covers it — the
-                trap that killed the last programmes. And no claim that the
+              <Callout tone="rose" title="What I will not do">
+                No "transformative", no "revolutionise", no national-rollout
+                promise. No implication that donor money quietly covers it, which is
+                the trap that killed the last programmes. And no claim that the
                 platform "brings Tanzania sovereignty":{" "}
                 <strong>sovereignty is hers to assert; my job is to build to it.</strong>
               </Callout>
               <Callout tone="emerald" title="Converting a skeptic into a champion">
-                <strong>48 hours:</strong> a note that proves I listened —
-                referencing the <em>specific</em> failure she named.{" "}
-                <strong>30 days:</strong> deliver the one small thing, exactly as
-                scoped. Trust is built by the kept small promise, not the
-                impressive big one. Then make her visible in the win and take none
-                of the credit.
+                Within 48 hours, a note that proves I listened, referencing the
+                specific failure she named. Within 30 days, deliver the one small
+                thing exactly as scoped. Trust is built by the kept small promise,
+                not the impressive big one. Then make her visible in the win and take
+                none of the credit.
               </Callout>
             </div>
           </Reveal>
@@ -197,8 +196,8 @@ export default function App() {
         id="pilot"
         taskTag="TASK 3 · Operational plan"
         kicker="3 rural districts · poor connectivity · low digital literacy"
-        title="Meet the constraints in the architecture and the change plan — not in the brochure."
-        lede="The binding constraint isn't connectivity, it's power: rural electrification sits around a quarter of households. So the design is offline-first, built on the national rails, and engineered to reduce a nurse's work, not add to it."
+        title="Meet the constraints in the architecture and the change plan, not in the brochure."
+        lede="The binding constraint is not connectivity, it is power: rural electrification sits around a quarter of households. So the design is offline-first, built on the national rails, and engineered to reduce a nurse's work rather than add to it."
       >
         <Reveal>
           <Mermaid chart={offlineChart} />
@@ -208,27 +207,27 @@ export default function App() {
           <Reveal>
             <CardItem badge="A · Local realities" title="Offline-first, solar-powered">
               All capture, validation and decision logic run on-device; records
-              queue and sync when signal returns. SMS/USSD fallback for critical
-              events on 2G. Solar + battery treated as core kit. Built{" "}
-              <strong>on</strong> DHIS2 + GoTHOMIS via the HDU API — not beside them.
+              queue and sync when signal returns. SMS or USSD fallback for critical
+              events on 2G. Solar and battery treated as core kit. Built on DHIS2
+              and GoTHOMIS through the HDU API, not beside them.
             </CardItem>
           </Reveal>
           <Reveal delay={0.08}>
             <CardItem badge="B · Staff" badgeTone="gold" title="Design out rational resistance">
-              The single highest-leverage move: <strong>kill the paper
-              duplicate</strong> so the tool reduces work. Peer super-users in
-              every facility; supportive (not punitive) supervision; give each
-              worker their own dashboard; Swahili job aids and a train-the-trainer
-              cascade.
+              The single highest-leverage move is to{" "}
+              <strong>kill the paper duplicate</strong> so the tool reduces work.
+              Peer super-users in every facility; supportive rather than punitive
+              supervision; give each worker their own dashboard; Swahili job aids and
+              a train-the-trainer cascade.
             </CardItem>
           </Reveal>
           <Reveal delay={0.16}>
             <CardItem badge="C · Wins" badgeTone="indigo" title="Leading vs lagging">
               <strong>Leading (weekly):</strong> active-user rate, digital-vs-paper
-              ratio, reporting-time saved, sync health, referral completion,
-              evidence of local data use. <strong>Lagging (track honestly over
-              years):</strong> facility delivery, ANC4, immunisation — don't
-              promise to move them in a quarter.
+              ratio, reporting-time saved, sync health, referral completion, evidence
+              of local data use. <strong>Lagging (track honestly over years):</strong>{" "}
+              facility delivery, ANC4, immunisation. I do not promise to move those in
+              a quarter.
             </CardItem>
           </Reveal>
         </div>
@@ -244,14 +243,13 @@ export default function App() {
               Tanzanian district.
             </h3>
             <p className="prose-body mt-4 max-w-3xl text-fg-muted">
-              The brief warns against cherry-picking pilot districts. So here's the
+              The brief warns against cherry-picking pilot districts, so here is the
               opposite: a transparent scoring model over all{" "}
               <strong>{MODEL_META.nDistricts} districts</strong>, computed from the
-              2022 census and real geometry. Move any weight and the choropleth,
-              the ranking and the three pilot picks recompute live. The picks
-              deliberately span the range — one to show value early, one median,
-              one to stress-test the offline design — exactly as the strategy
-              argues.
+              2022 census and real geometry. Move any weight and the choropleth, the
+              ranking and the three pilot picks recompute live. The picks span the
+              range on purpose: one to show value early, one median, one to
+              stress-test the offline design, exactly as the strategy argues.
             </p>
           </Reveal>
           <div id="model" className="mt-6 scroll-mt-20">
@@ -262,12 +260,12 @@ export default function App() {
           <Reveal>
             <p className="mono mt-3 text-[0.7rem] leading-relaxed text-fg-dim">
               Integrity note: features tagged <span className="text-emerald">real</span>{" "}
-              are computed from census + geometry. Features tagged{" "}
+              are computed from census and geometry. Features tagged{" "}
               <span className="text-gold">modelled</span> are transparent proxies
-              (e.g. density as a connectivity stand-in) to be replaced by a SARA
-              readiness assessment at inception. Council/RMO buy-in — the #1
-              sustainability factor — is deliberately <em>not</em> in the model: it
-              is assessed in person, not inferred from a map.
+              (for example, density as a connectivity stand-in) to be replaced by a
+              SARA readiness assessment at inception. Council and RMO buy-in, the
+              first sustainability factor, is deliberately not in the model: it is
+              assessed in person, not inferred from a map.
             </p>
           </Reveal>
         </div>
@@ -294,8 +292,8 @@ export default function App() {
         id="crisis"
         taskTag="TASK 4 · Crisis management"
         kicker="A newspaper questions foreign data programmes"
-        title="The first instinct — rebut publicly — is the single most damaging move."
-        lede="It makes a foreign company the protagonist and confirms the article's frame. A Ministry calmly demonstrating it owns and controls its citizens' data refutes it. We respond to the concern, not the article."
+        title="The first instinct, to rebut publicly, is the single most damaging move."
+        lede="It makes a foreign company the protagonist and confirms the article's frame. A Ministry calmly demonstrating that it owns and controls its citizens' data refutes it. We respond to the concern, not the article."
       >
         <Reveal>
           <Mermaid chart={crisisChart} />
@@ -303,10 +301,10 @@ export default function App() {
 
         <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {[
-            ["This data is Tanzanian", "Owned by the Ministry, hosted in Tanzania, governed by Tanzanian law — stated as settled fact, not defence."],
-            ["Tanzania chose & funds it", "Part of Tanzania's own 2026/27 investment — the opposite of trading data for aid."],
+            ["This data is Tanzanian", "Owned by the Ministry, hosted in Tanzania, governed by Tanzanian law. Stated as settled fact, not defence."],
+            ["Tanzania chose and funds it", "Part of Tanzania's own 2026/27 investment. The opposite of trading data for aid."],
             ["The custodian can be switched off", "Exit clauses, data portability, local staff trained to run it, a named handover horizon."],
-            ["We welcome the scrutiny", "The Ministry publishes its governance terms and names an oversight mechanism — verification, not trust."],
+            ["We welcome the scrutiny", "The Ministry publishes its governance terms and names an oversight mechanism. Verification, not trust."],
           ].map(([t, d], i) => (
             <Reveal key={t} delay={i * 0.06}>
               <CardItem badge={`Message ${i + 1}`} badgeTone="emerald" title={t}>
@@ -318,13 +316,13 @@ export default function App() {
 
         <Reveal delay={0.1}>
           <div className="mt-5">
-            <Callout tone="gold" title="The memo's core recommendation (to the PS-MoH)">
-              Do not engage the newspaper adversarially. The Ministry — not Sand —
-              is the lead voice. Within 24 hours we provide a one-page
-              data-governance fact sheet (where hosted, who can access, how it
-              complies with the Personal Data Protection Act 2022) so the
-              spokesperson speaks from facts, not assurances. The vendor enables
-              Tanzania's sovereignty; only Tanzania asserts it.
+            <Callout tone="gold" title="The memo's core recommendation (to the PS, Ministry of Health)">
+              Do not engage the newspaper adversarially. The Ministry, not Sand, is
+              the lead voice. Within 24 hours we provide a one-page data-governance
+              fact sheet (where data is hosted, who can access it, how it complies
+              with the Personal Data Protection Act 2022) so the spokesperson speaks
+              from facts, not assurances. The vendor enables Tanzania's sovereignty;
+              only Tanzania asserts it.
             </Callout>
           </div>
         </Reveal>
@@ -335,7 +333,7 @@ export default function App() {
         id="lab"
         kicker="Data lab · who I am"
         title="I read this country in data before I read it in slides."
-        lede="The same census that powers the readiness model tells you why a static pilot plan goes stale. Four census rounds, 1988 → 2022."
+        lede="The same census that powers the readiness model shows why a static pilot plan goes stale. Four census rounds, 1988 to 2022."
       >
         <Reveal>
           <PopulationChart />
@@ -348,16 +346,16 @@ export default function App() {
               <span className="mono text-xs">mapshaper</span>; geometry features
               (area, density, geodesic distance to Dar) computed with{" "}
               <span className="mono text-xs">@turf</span>; choropleth rendered with{" "}
-              <span className="mono text-xs">d3-geo</span>; scoring recomputed in
-              the browser so the rubric is honestly inspectable.
+              <span className="mono text-xs">d3-geo</span>; scoring recomputed in the
+              browser so the rubric stays inspectable.
             </CardItem>
           </Reveal>
           <Reveal delay={0.08}>
             <CardItem badge="Discipline" badgeTone="gold" title="Real vs modelled, always labelled">
-              Every input in the model is tagged. I don't dress an assumption as a
-              measurement — the same discipline I'd use before repeating a Rwanda
-              figure to a Tanzanian minister: cite it as a claim to be
-              corroborated, not a fact.
+              Every input in the model is tagged. I do not dress an assumption as a
+              measurement. It is the same discipline I use before repeating a Rwanda
+              figure to a Tanzanian minister: cite it as a claim to be corroborated,
+              not a fact.
             </CardItem>
           </Reveal>
           <Reveal delay={0.16}>
@@ -381,14 +379,14 @@ export default function App() {
           <Reveal>
             <div className="eyebrow">The through-line</div>
             <h2 className="display mt-3 text-3xl font-semibold text-fg sm:text-4xl">
-              Take a platform into a real, under-resourced system — win the
-              ministry <span className="text-emerald">and</span> the frontline, and
-              close the loop so the data actually gets used.
+              Take a platform into a real, under-resourced system, win the ministry{" "}
+              <span className="text-emerald">and</span> the frontline, and close the
+              loop so the data actually gets used.
             </h2>
             <p className="prose-body mx-auto mt-5 max-w-xl text-fg-muted">
-              That's exactly this role, and exactly my last decade — now with an
-              AI-augmented layer through my PhD. I'd be the in-country anchor
-              between the Ministry, the frontline and the product team.
+              That is this role, and it is my last decade, now with an AI-augmented
+              layer through my PhD. I would be the in-country anchor between the
+              Ministry, the frontline and the product team.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <a
@@ -403,10 +401,8 @@ export default function App() {
 
           <Reveal delay={0.1}>
             <p className="mono mx-auto mt-12 max-w-2xl text-[0.7rem] leading-relaxed text-fg-dim">
-              Prepared for assignment purposes. Named officials current to
-              Tanzania's Nov-2025 cabinet and flagged for re-verification.
-              Rwanda/HOS figures treated as Sand's published claims pending
-              independent corroboration. Spatial model: {MODEL_META.source}
+              Disclaimer: this work is based on my own experience as a researcher and
+              on publicly available data, which may need verification.
             </p>
           </Reveal>
         </div>

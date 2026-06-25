@@ -218,7 +218,7 @@ export function ReadinessModel() {
           </div>
           <p className="mt-2 text-sm leading-relaxed text-fg-muted">
             Drag a criterion and the choropleth, ranking and three pilot picks
-            recompute instantly. This is the Task-3 selection rubric made live —
+            recompute instantly. This is the Task-3 selection rubric made live:
             transparent inputs, no cherry-picking.
           </p>
 

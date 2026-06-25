@@ -121,7 +121,7 @@ const regionPop = regions.features
 const out = {
   generatedAt: "2026-06-25",
   source:
-    "Tanzania 2022 PHC (NBS, via citypopulation.de) + UVIWADA admin shapefiles. Geometry features computed with @turf.",
+    "Tanzania 2022 Population & Housing Census (NBS) and public administrative boundaries. Geometry features computed with @turf.",
   darReference: DAR,
   nDistricts: feats.length,
   districts: feats,

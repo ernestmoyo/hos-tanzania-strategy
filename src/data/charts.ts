@@ -9,13 +9,13 @@ export const stakeholderChart = `flowchart TB
 
   HOS([HOS launch in Tanzania]):::moh
 
-  subgraph P1[" PRINCIPAL 1 — Ministry of Health "]
+  subgraph P1[" PRINCIPAL 1 · Ministry of Health "]
     PSMOH[PS-MoH · Dr Seif Shekalaghe<br/>owns Digital Health Strategy]:::moh
     MOHICT[MoH Dir. ICT / HIS<br/>DHIS2 · AfyaCare]:::moh
     DM[Dep. Minister · Dr Florence Samizi<br/>the skeptic]:::moh
   end
 
-  subgraph P2[" PRINCIPAL 2 — PO-RALG / TAMISEMI "]
+  subgraph P2[" PRINCIPAL 2 · PO-RALG / TAMISEMI "]
     RALGICT[Dir. ICT · Eric Kitali<br/>owns GoTHOMIS]:::ralg
     FAC[~90% of patient contacts<br/>dispensaries · health centres]:::ralg
   end
@@ -110,7 +110,7 @@ export const crisisChart = `flowchart TB
 `;
 
 export const roadmapChart = `gantt
-  title First 90 days — Tanzania HOS launch
+  title First 90 days · Tanzania HOS launch
   dateFormat X
   axisFormat %s
   section Anchor & gates
