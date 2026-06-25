@@ -50,6 +50,14 @@ export function Hero() {
             >
               Read the strategy
             </a>
+            <a
+              href="/walkthrough.mp4"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-lg border border-line bg-surface px-5 py-2.5 text-sm font-medium text-fg-muted transition hover:text-fg"
+            >
+              ▶ Watch the walkthrough
+            </a>
           </div>
         </motion.div>
 
