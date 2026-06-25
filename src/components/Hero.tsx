@@ -4,7 +4,7 @@ const STATS = [
   ["10+", "yrs in African health systems"],
   ["5", "countries · field-to-ministry loops"],
   ["195", "districts modelled here"],
-  ["PhD", "Malaria Atlas Project · Tanzania"],
+  ["PhD", "In training · Tanzania"],
 ];
 
 export function Hero() {
